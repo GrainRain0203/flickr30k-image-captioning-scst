@@ -1,0 +1,71 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# IDE, OS, and local agent metadata
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+.agents/
+.codex/
+
+# Dataset and generated dataset metadata
+Flickr30k/
+flickr30k/
+datasets/
+data/
+cache/
+.cache/
+**/cache/
+
+# Temporary and report-build artifacts
+tmp/
+paper_code_screenshots/
+*.pdf
+*.doc
+*.docx
+PAPER_DRAFT.md
+PAPER_OUTLINE.md
+REPORT_SECTION_III_DRAFT.md
+scripts/fix_report_heading_caption_format.py
+scripts/revise_report_controls_scst_reward.py
+scripts/revise_report_split90_and_code_appendix.py
+scripts/update_report_docx.py
+
+# Unrelated local utility and legacy duplicate source snapshot
+srun_login.py
+code/
+
+# Large or redundant generation artifacts
+outputs/**/predictions_*.csv
+outputs/**/samples_*.csv
+outputs/**/samples_*.md
+outputs/**/train_log.raw_duplicated.csv
+outputs/outputs/
+outputs/train_log.csv
+outputs/m1_clean_train_log.csv
+
+# Keep compact experiment metadata, but publish only two necessary checkpoints.
+outputs/**/*.pt
+!outputs/m5_convnext_base_resize384_lra/best.pt
+!outputs/m5_convnext_base_resize384_lra_scst_cider_safe/best.pt
+
+# Interrupted checkpoint writes
+*.pt.tmp
+*.pth.tmp
+
