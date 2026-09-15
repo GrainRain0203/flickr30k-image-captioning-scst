@@ -68,4 +68,4 @@ outputs/**/*.pt
 # Interrupted checkpoint writes
 *.pt.tmp
 *.pth.tmp
-
+*.baiduyun.uploading.cfg
